@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212529"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#0F1923"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/moviebt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/televbt"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/baseline_movie_24" />
+
+        <TextView
+            android:id="@+id/txtMovie"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moviebt"
+            android:layout_alignStart="@+id/moviebt"
+            android:layout_alignEnd="@+id/moviebt"
+            android:layout_marginStart="-8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-23dp"
+            android:text="@string/movies"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/televbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_tv_24"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="16dp" />
+
+
+        <TextView
+            android:id="@+id/txtTelev"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/televbt"
+            android:layout_alignStart="@+id/televbt"
+            android:layout_alignEnd="@+id/televbt"
+            android:layout_marginStart="-14dp"
+            android:layout_marginEnd="-18dp"
+            android:text="@string/tv_shows"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/favoritebt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_favorite_border_24"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/televbt"
+            android:layout_marginStart="100dp" />
+
+        <TextView
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtfav"
+            android:layout_below="@+id/favoritebt"
+            android:layout_alignStart="@+id/favoritebt"
+            android:layout_alignEnd="@+id/favoritebt"
+            android:layout_marginStart="-14dp"
+            android:layout_marginEnd="-18dp"
+            android:text="@string/favorites"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
